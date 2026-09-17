@@ -1,0 +1,24 @@
+# ==============================================================================
+# Requirements for Dashboard for Rain Prediction in North India
+# Compatible with Python 3.10 / 3.11 / 3.12
+# ==============================================================================
+
+# 1. Web Application Framework
+streamlit==1.50.0
+
+# 2. Data Processing & Parquet Storage Engine
+pandas==2.3.2
+numpy==2.2.6
+pyarrow==21.0.0
+
+# 3. Interactive Data Visualization
+plotly==7.0.0
+
+# 4. Machine Learning, Preprocessing Pipelines & Model Deserialization
+joblib==1.5.2
+scikit-learn==1.7.2
+xgboost==3.0.5
+scipy==1.16.2
+
+# 5. Raw Dataset Support (Reading .xlsx files)
+openpyxl==3.1.5
