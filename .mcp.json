@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "clario": {
+      "type": "stdio",
+      "command": "C:\\Users\\aarik\\.clario\\runtime\\node-win32-x64.exe",
+      "args": [
+        "C:\\Users\\aarik\\.clario\\mcp-server\\index.js"
+      ],
+      "env": {
+        "CLAR_WORKSPACE": "c:\\Users\\aarik\\Downloads\\Project assignment",
+        "CLAR_API_URL": "https://hub.clario.chat",
+        "CLAR_JWT": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjY2MmQ3YTBkNGVlZmQzNDMyNjFjYWRkZmZhZWM2MjNkYzZjYTlmZjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vY2xhcmlvLWFpIiwiYXVkIjoiY2xhcmlvLWFpIiwiYXV0aF90aW1lIjoxNzg4NzkxMzAyLCJ1c2VyX2lkIjoiRFAzdTJBenFXOWNISjlid1NBRDRlOXZlSURRMiIsInN1YiI6IkRQM3UyQXpxVzljSEo5YndTQUQ0ZTl2ZUlEUTIiLCJpYXQiOjE3ODk2NjExMTEsImV4cCI6MTc4OTY2NDcxMSwiZW1haWwiOiJhYXJpa2E2MTlAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiYWFyaWthNjE5QGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.A_rKpTjLy09lqzvYL2la-fnELTvpwxbZ2I2i1udPL2g1AtCgIcFxCSWcrE5KDPNrk4W5DLx2_jXUAKRMvoLWwSezpZED24vtdIqBdyo_WrSzoN08ltDzGeuTvvR7uK8GyeRBRGRbU69xegQGlt_iPg6z4PI5GekY2_srPQnj_GCR_fonheScIlaU9F2GB-byUob26bhxg4phnMg29-nxT0sDJYIM6O2XQLawqPaQ81cwGYHtqF21992qC5a2rKS4P1IgeB-JHJFFM9H8ITDuZXsfI-jIEr65WqpXzGxbLHhrzkcDDjp18JdXUGqohShF4DVZu2GArFsHWlDxc9G1CA",
+        "PATH": "C:\\Users\\aarik\\.clario\\runtime;C:\\Python314\\Scripts\\;C:\\Python314\\;C:\\app\\aarik\\product\\11.2.0\\dbhome_1\\bin;C:\\Program Files\\Python311\\Scripts\\;C:\\Program Files\\Python311\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Users\\aarik\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\aarik\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\aarik\\AppData\\Roaming\\npm;C:\\Users\\aarik\\AppData\\Local\\Programs\\Antigravity IDE\\bin"
+      }
+    }
+  }
+}

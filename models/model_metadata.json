@@ -1,0 +1,125 @@
+{
+  "project_name": "Dashboard for Rain Prediction in North India",
+  "target_definition": {
+    "classification_target": "rain_tomorrow (Binary: 1 if Next-Day Rain >= 0.1 mm, 0 if Dry)",
+    "regression_target": "rainfall_tomorrow_mm (Continuous Next-Day Rain Amount in mm)"
+  },
+  "split_strategy": "Chronological Time-Aware Split",
+  "train_period": "2015-01-01 to 2023-12-31 (101,741 rows)",
+  "test_period": "2024-01-01 to 2025-02-09 (33,329 rows)",
+  "features": {
+    "numerical": [
+      "avg_temp_c",
+      "min_temp_c",
+      "max_temp_c",
+      "temp_range_c",
+      "temp_anomaly_c",
+      "air_pressure_hpa",
+      "pressure_diff_1d_hpa",
+      "pressure_anomaly_hpa",
+      "wind_speed_kmh",
+      "rainfall_lag1_mm",
+      "rainfall_lag2_mm",
+      "rainfall_roll3_sum_mm",
+      "rainfall_roll7_sum_mm",
+      "rain_today",
+      "imd_rainy_day_today",
+      "sin_day_of_year",
+      "cos_day_of_year",
+      "sin_month",
+      "cos_month",
+      "elevation_m",
+      "latitude",
+      "longitude"
+    ],
+    "categorical": [
+      "season",
+      "state",
+      "sub_region"
+    ],
+    "transformed_feature_count": 34
+  },
+  "classification_metrics": {
+    "logistic_regression": {
+      "model": "Logistic Regression",
+      "accuracy": 0.8447,
+      "precision": 0.742,
+      "recall": 0.7416,
+      "f1_score": 0.7418,
+      "roc_auc": 0.8754,
+      "brier_score": 0.1224,
+      "confusion_matrix": [
+        [
+          20719,
+          2585
+        ],
+        [
+          2590,
+          7435
+        ]
+      ]
+    },
+    "random_forest": {
+      "model": "Random Forest",
+      "accuracy": 0.8433,
+      "precision": 0.726,
+      "recall": 0.7694,
+      "f1_score": 0.7471,
+      "roc_auc": 0.8865,
+      "brier_score": 0.1179,
+      "confusion_matrix": [
+        [
+          20393,
+          2911
+        ],
+        [
+          2312,
+          7713
+        ]
+      ]
+    },
+    "xgboost": {
+      "model": "XGBoost",
+      "accuracy": 0.8378,
+      "precision": 0.7111,
+      "recall": 0.7759,
+      "f1_score": 0.7421,
+      "roc_auc": 0.8848,
+      "brier_score": 0.121,
+      "confusion_matrix": [
+        [
+          20144,
+          3160
+        ],
+        [
+          2247,
+          7778
+        ]
+      ]
+    }
+  },
+  "regression_metrics": {
+    "model": "XGBoost Regressor",
+    "mae_mm": 2.982,
+    "rmse_mm": 7.996,
+    "r2_score": 0.1987
+  },
+  "champion_classifier": "Random Forest Classifier (ROC-AUC: 0.840, F1: 0.702, Accuracy: 76.5%)",
+  "top_predictive_features": {
+    "rain_today": 0.18339851403291388,
+    "temp_range_c": 0.09320698564174866,
+    "rainfall_lag1_mm": 0.08860961819960636,
+    "cos_day_of_year": 0.0739550324661227,
+    "rainfall_roll3_sum_mm": 0.05899702469457802,
+    "imd_rainy_day_today": 0.0552869886595929,
+    "rainfall_roll7_sum_mm": 0.051273655828440665,
+    "pressure_anomaly_hpa": 0.04949393843523521,
+    "sin_day_of_year": 0.03905961796348954,
+    "max_temp_c": 0.026555346016696735,
+    "avg_temp_c": 0.02624485371884017,
+    "rainfall_lag2_mm": 0.025969234009132834,
+    "min_temp_c": 0.0235550706851255,
+    "cos_month": 0.023434301157722076,
+    "air_pressure_hpa": 0.022862196278689816
+  }
+}
